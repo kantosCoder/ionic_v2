@@ -20,7 +20,6 @@ npm-debug.log*
 /.idea
 /.ionic
 /.sass-cache
-/.sourcemaps
 /.versions
 /.vscode
 /coverage
