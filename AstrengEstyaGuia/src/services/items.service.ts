@@ -10,45 +10,58 @@ export class ItemsService{
     constructor(public afDB: AngularFireDatabase){
 
     }
-
+	//SERVICIO ITEMS
     public getItems(){
-        return this.afDB.list('fruits/').valueChanges(); 
-        //Esta función devolverá todos los datos que tengamos en el apartado fruits, en nuestra base de datos
+        return this.afDB.list('objetos/').valueChanges(); 
     }
-    public saveItem(fruit){
-        let key = this.afDB.list('enemigos/').push(fruit).key;
-        //Guardamos la fruta y obetenemos el id que firebase pone al nudulo de nuestra fruta.
-        //Al guardarse sin id nuestra fruta, ahora la actualizamos con el id que firebase nos devuelve.
-        fruit.id = key;
-        this.afDB.database.ref('enemigos/'+fruit.id).set(fruit);
-       
+    public saveItem(item){
+        let key = this.afDB.list('objetos/').push(item).key;
+        item.id = key;
+        this.afDB.database.ref('objetos/'+item.id).set(item);
     }
-	public addUser(){
-		var admin = require("firebase-admin");
-		admin.initializeApp({
-		  credential: admin.credential.applicationDefault(),
-		  databaseURL: 'https://astrengestya.firebaseio.com'
-		});
-		// Get a database reference to our blog
-		var db = admin.database();
-      var usersRef = db.child("enemigos");
-		usersRef.set({
-			nombre: "June 23, 1912",
-			descripcion: "Alan Turing"
-		});
-    }
-	
-    public updateItem(fruit){
-        //Actualizamos la fruta con el id que recibimos del objeto del parametro
-        this.afDB.database.ref('fruits/'+fruit.id).set(fruit);
+    public updateItem(item){
+        this.afDB.database.ref('objetos/'+item.id).set(item);
     }
     public getItem(id){
-        return this.afDB.object('fruits/'+id).valueChanges();
-        //Devolvera la fruta con el id que le pasamos por parametro
+        return this.afDB.object('objetos/'+id).valueChanges();
     }
     public removeItem(id){
-        this.afDB.database.ref('fruits/'+id).remove();
-        //Borrará la fruta con el id que le pasamos por parametro
+        this.afDB.database.ref('objetos/'+id).remove();
     }
-
+	//SERVICIO ENEMIGOS
+    public getEnemigos(){
+        return this.afDB.list('enemigos/').valueChanges(); 
+    }
+    public saveEnemigo(enemy){
+        let key = this.afDB.list('enemigos/').push(enemy).key;
+        enemy.id = key;
+        this.afDB.database.ref('enemigos/'+enemy.id).set(enemy);
+    }
+    public updateEnemigo(enemy){
+        this.afDB.database.ref('enemigos/'+enemy.id).set(enemy);
+    }
+    public getEnemigo(id){
+        return this.afDB.object('enemigos/'+id).valueChanges();
+    }
+    public removeEnemigo(id){
+        this.afDB.database.ref('enemigos/'+id).remove();
+    }
+	//SERVICIO PERSONAJES
+    public getChars(){
+        return this.afDB.list('personajes/').valueChanges(); 
+    }
+    public saveChar(character){
+        let key = this.afDB.list('personajes/').push(character).key;
+        character.id = key;
+        this.afDB.database.ref('personajes/'+character.id).set(character);
+    }
+    public updateChar(character){
+        this.afDB.database.ref('personajes/'+character.id).set(character);
+    }
+    public getChar(id){
+        return this.afDB.object('personajes/'+id).valueChanges();
+    }
+    public removeChar(id){
+        this.afDB.database.ref('personajes/'+id).remove();
+    }
 }

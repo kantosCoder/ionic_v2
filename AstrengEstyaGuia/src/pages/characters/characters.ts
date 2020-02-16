@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the CharactersPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { PrincipalPage } from '../principal/principal';
+import { ObjectDataProvider } from '../../providers/object-data/object-data';
+import { HttpClient } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
+import {ItemsService} from '../../services/items.service';
 
 @IonicPage()
 @Component({
@@ -14,12 +12,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'characters.html',
 })
 export class CharactersPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+idSelected:any; 
+	show:boolean; 
+	character = [];
+	character = {id:0, name:null, desc:null}; 
+    constructor(public navCtrl: NavController, public itemsService:ItemsService){ 
+	this.show = false; 
+    this.idSelected = 0; 
+    itemsService.getChars().subscribe(characters=>{this.characters = characters;});
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CharactersPage');
+	selectItem(id){ 
+    this.show = true;
+    this.idSelected = id;
+    let receivedChar:any; 
+    this.itemsService.getChar(id)
+    .subscribe(character=>{
+      receivedChar = character;
+      this.character = receivedChar;
+    });
   }
-
 }

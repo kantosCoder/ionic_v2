@@ -1,26 +1,26 @@
 <ion-content padding style="background-image: url('assets/imgs/fondo.jpg');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">
-
-    
-      <div padding *ngIf="show"><!--Comprobamos si la variable show esta en true, si es asi se muestran los campos-->
-      <ion-item>
-        <ion-label floating>Nombre</ion-label>
-        <ion-input type="text" [(ngModel)]="fruit.name"></ion-input> <!--Mediante el atributo ngModel, este campo tendrá el valor del name de la fruta-->
+<br/><br/>
+   <ion-item-group style="background: black; color: white;">
+      <ion-item-divider color="light" style="background: black; color: white;"><b>OBJETOS</b></ion-item-divider>
+	<div padding *ngIf="show">
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="item.name" style="background: black; color: white;"></ion-input> 
       </ion-item>
-      <ion-item>
-        <ion-label floating>Cantidad</ion-label>
-        <ion-input type="text" [(ngModel)]="fruit.quantity"></ion-input><!--Mediante el atributo ngModel, este campo tendrá el valor del quantity de la fruta-->
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion</ion-label>
+        <ion-input type="text" [(ngModel)]="item.desc"></ion-input>
       </ion-item>
-        <button (click)="saveFruit()" ion-button full>Guardar</button><!--Mediante el atributo click, llamará a nuestra funcion de guardar fruta en home.ts-->
-        <button *ngIf="idSelected != 0" (click)="removeSelectedFruit()" ion-button full color="danger">Borrar</button>
-        <!--Solo aparecerá si idSelected es diferente a 0, Mediante el atributo click, llamará a nuestra funcion de remove fruta en home.ts-->
+        <button (click)="saveItem()" ion-button full>Guardar</button>
+        <button *ngIf="idSelected != 0" (click)="removeSelectedItem()" ion-button full color="danger">Borrar</button>
   </div>
-    <ion-list>
-      <button ion-item *ngFor="let fruit of fruits" (click)="selectFruit(fruit.id)"><!--Recorremos el array fruits que hemos cargado en el constructor home.ts-->
-        Nombre: {{ fruit.name }} | Unidades: {{fruit.quantity}} <!--Mostramos el nombre y la cantidad-->
+    <ion-list style="background: black; color: white;">
+      <button ion-item *ngFor="let item of items" (click)="selectItem(item.id)" style="background: black; color: white;">
+        Nombre: {{ item.name }} | {{item.desc}}
       </button>  
     </ion-list>
   <ion-fab bottom right>
-      <button (click)="show = !show" ion-fab mini><ion-icon name="add"></ion-icon></button><!--Con este botón mostramos u ocultamos los campos-->
+      <button (click)="show = !show" ion-fab mini><ion-icon name="add"></ion-icon></button>
     </ion-fab>
-    
+</ion-item-group>
 </ion-content>

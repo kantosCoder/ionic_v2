@@ -34,6 +34,13 @@ imports: [
 ---OTROS-----
 npm i typescript@latest para actualizar typescript
 
+para evitar el error "Object(...) is not a function":
+npm i rxjs@^6.0 rxjs-compat 
+npm install @types/node@10.1.4
+npm update --save @types/node
+npm install rxjs
+npm install @types/node --save-dev
+
 --COMPILAR LA APK--
 para compilar la apk descargar el gradle:
 https://gradle.org/next-steps/?version=6.1.1&format=all

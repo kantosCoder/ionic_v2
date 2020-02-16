@@ -1,4 +1,25 @@
-
-<ion-content padding style="background-image: url('assets/imgs/fondo.jpg');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">
-
+<ion-content padding style="background-image: url('assets/imgs/fondo.jpg');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">
+<br/><br/>
+   <ion-item-group style="background: black; color: white;">
+      <ion-item-divider color="light" style="background: black; color: white;"><b>Personajes</b></ion-item-divider>
+	  <div padding *ngIf="show">
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;">Nombre:</ion-label>
+        <ion-input type="text" [(ngModel)]="character.name" readonly></ion-input> 
+      </ion-item>
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion:</ion-label>
+        <ion-input type="text" [(ngModel)]="character.desc" readonly></ion-input>
+      </ion-item>
+	  <br/><br/>
+	    <button (click)="show = !show" ion-fab mini><ion-icon name="arrow-back"></ion-icon></button>
+	 </div>
+	 <div *ngIf="!show">
+    <ion-list style="background: black; color: white;">
+      <button ion-item *ngFor="let character of characters" (click)="selectItem(character.id)" style="background: black; color: white;">
+        Nombre: {{ character.name }} | {{character.desc}}
+      </button> 
+    </ion-list>
+	</div>
+</ion-item-group>
 </ion-content>

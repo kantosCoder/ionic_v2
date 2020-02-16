@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the EnemiesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { PrincipalPage } from '../principal/principal';
+import { ObjectDataProvider } from '../../providers/object-data/object-data';
+import { HttpClient } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
+import {ItemsService} from '../../services/items.service';
 
 @IonicPage()
 @Component({
@@ -14,12 +12,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'enemies.html',
 })
 export class EnemiesPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	idSelected:any; 
+	show:boolean; 
+	enemies = [];
+	enemy = {id:0, name:null, desc:null}; 
+    constructor(public navCtrl: NavController, public itemsService:ItemsService){ 
+	this.show = false; 
+    this.idSelected = 0; 
+    itemsService.getEnemigos().subscribe(enemies=>{this.enemies = enemies;});
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad EnemiesPage');
+	selectItem(id){ 
+    this.show = true;
+    this.idSelected = id;
+    let receivedItem:any; 
+    this.itemsService.getEnemigo(id)
+    .subscribe(enemy=>{
+      receivedEnemy = enemy;
+      this.enemy = receivedEnemy;
+    });
   }
-
 }

@@ -1,11 +1,26 @@
-<ion-content padding style="background-image: url('assets/imgs/fondo.jpg');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">
+<ion-content padding style="background-image: url('assets/imgs/fondo.jpg');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">
 <br/><br/>
    <ion-item-group style="background: black; color: white;">
       <ion-item-divider color="light" style="background: black; color: white;"><b>OBJETOS</b></ion-item-divider>
-      <ion-item *ngFor="let item of xmlItems" style="background: black; color: white;">
-	  <ion-icon name="flask" item-start style="background: black; color: white;"></ion-icon>
-         <b>{{ item.nombre }}</b><br/>
-		 <i>{{ item.descripcion }}</i>
+	  <div padding *ngIf="show">
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;">Nombre:</ion-label>
+        <ion-input type="text" [(ngModel)]="item.name" readonly></ion-input> 
       </ion-item>
-   </ion-item-group>
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion:</ion-label>
+        <ion-input type="text" [(ngModel)]="item.desc" readonly></ion-input>
+      </ion-item>
+	  
+	  <br/><br/>
+	    <button (click)="show = !show" ion-fab mini><ion-icon name="arrow-back"></ion-icon></button>
+	 </div>
+	 <div *ngIf="!show">
+    <ion-list style="background: black; color: white;">
+      <button ion-item *ngFor="let item of items" (click)="selectItem(item.id)" style="background: black; color: white;">
+        Nombre: {{ item.name }} | {{item.desc}}
+      </button> 
+    </ion-list>
+	</div>
+</ion-item-group>
 </ion-content>

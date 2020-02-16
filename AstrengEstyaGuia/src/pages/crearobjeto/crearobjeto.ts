@@ -5,35 +5,48 @@ import { HttpHeaders } from '@angular/common/http';
 import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import {ItemsService} from '../../services/items.service';
 
-/**
- * Generated class for the CrearobjetoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-crearobjeto',
   templateUrl: 'crearobjeto.html',
 })
 export class CrearobjetoPage {
-	fruit = {id:0, name:null, quantity:null}; //Declaramos un objeto vacio de fruta
-	fileName:string = 'archivo.txt';
-    constructor(public navCtrl: NavController, public itemsService:ItemsService){ }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CrearobjetoPage');
+	idSelected:any; 
+	show:boolean; 
+	items = [];
+	item = {id:0, name:null, desc:null}; 
+    constructor(public navCtrl: NavController, public itemsService:ItemsService){ 
+	this.show = false; 
+    this.idSelected = 0; 
+    itemsService.getItems().subscribe(items=>{this.items = items;});
   }
-
-  ionViewWillEnter(){
-
-}
-// Here we import the File System module of node
-
-saveFruit(){
-      this.itemsService.saveItem(this.fruit);;
+saveItem(){
+	if(this.idSelected != 0){
+       this.itemsService.updateItem(this.item);;
+    }else{
+       this.itemsService.saveItem(this.item);;
+    }
+    this.clear();
   }
-   
-  
+selectItem(id){ 
+    this.show = true;
+    this.idSelected = id;
+    let receivedItem:any; 
+    this.itemsService.getItem(id)
+    .subscribe(item=>{
+      receivedItem = item;
+      this.item = receivedItem;
+    });
+  }
+  removeSelectedItem(){
+    this.itemsService.removeItem(this.idSelected);
+    this.clear();
+  }
+  clear(){
+    this.show = false;
+    this.idSelected = 0;
+    this.item.name = null;
+    this.item.id = null;
+    this.item.desc  = null;
+  }
 }
