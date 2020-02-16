@@ -1,19 +1,26 @@
 <ion-content padding style="background-image: url('assets/imgs/fondo.jpg');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">
-
-    
-    <form style="margin-top: 30%">
-        <ion-item>
-            <ion-label floating>Nombre</ion-label>
-            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating>Descripcion</ion-label>
-            <ion-input name="descripcion" type="text" required></ion-input>
-        </ion-item>
-        
-        <div padding>
-            <button ion-button type="submit" color="primary" block>Crear</button>
-        </div>
-    </form>
-    
+<br/><br/>
+   <ion-item-group style="background: black; color: white;">
+      <ion-item-divider color="light" style="background: black; color: white;"><b>PERSONAJES</b></ion-item-divider>
+	<div padding *ngIf="show">
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="character.name" style="background: black; color: white;"></ion-input> 
+      </ion-item>
+      <ion-item style="background: black; color: white;">
+        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion</ion-label>
+        <ion-input type="text" [(ngModel)]="character.desc"></ion-input>
+      </ion-item>
+        <button (click)="saveChar()" ion-button full>Guardar</button>
+        <button *ngIf="idSelected != 0" (click)="removeSelectedChar()" ion-button full color="danger">Borrar</button>
+  </div>
+    <ion-list style="background: black; color: white;">
+      <button ion-item *ngFor="let character of characters" (click)="selectChar(character.id)" style="background: black; color: white;">
+        Nombre: {{ character.name }} | {{character.desc}}
+      </button>  
+    </ion-list>
+  <ion-fab bottom right>
+      <button (click)="show = !show" ion-fab mini><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-item-group>
 </ion-content>

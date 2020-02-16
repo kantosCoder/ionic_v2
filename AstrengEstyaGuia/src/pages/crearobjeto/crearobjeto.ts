@@ -27,7 +27,7 @@ saveItem(){
        this.itemsService.saveItem(this.item);;
     }
     this.clear();
-  }
+}
 selectItem(id){ 
     this.show = true;
     this.idSelected = id;
@@ -45,8 +45,8 @@ selectItem(id){
   clear(){
     this.show = false;
     this.idSelected = 0;
-    this.item.name = null;
-    this.item.id = null;
-    this.item.desc  = null;
+    this.item.name = "";
+    this.item.id = 0;
+    this.item.desc  = "";
   }
 }

@@ -175,12 +175,11 @@ var ItemsPage = /** @class */ (function () {
             _this.item = receivedItem;
         });
     };
-    var _a, _b;
     ItemsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-items',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\items\items.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n<br/><br/>\n\n   <ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>OBJETOS</b></ion-item-divider>\n\n	  <div padding *ngIf="show">\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;">Nombre:</ion-label>\n\n        <ion-input type="text" [(ngModel)]="item.name" readonly></ion-input> \n\n      </ion-item>\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion:</ion-label>\n\n        <ion-input type="text" [(ngModel)]="item.desc" readonly></ion-input>\n\n      </ion-item>\n\n	  \n\n	  <br/><br/>\n\n	    <button (click)="show = !show" ion-fab mini><ion-icon name="arrow-back"></ion-icon></button>\n\n	 </div>\n\n	 <div *ngIf="!show">\n\n    <ion-list style="background: black; color: white;">\n\n      <button ion-item *ngFor="let item of items" (click)="selectItem(item.id)" style="background: black; color: white;">\n\n        Nombre: {{ item.name }} | {{item.desc}}\n\n      </button> \n\n    </ion-list>\n\n	</div>\n\n</ion-item-group>\n\n</ion-content>'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\items\items.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]) === "function" ? _b : Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]])
     ], ItemsPage);
     return ItemsPage;
 }());
@@ -214,7 +213,7 @@ var CharactersPage = /** @class */ (function () {
         var _this = this;
         this.navCtrl = navCtrl;
         this.itemsService = itemsService;
-        this.character = [];
+        this.characters = [];
         this.character = { id: 0, name: null, desc: null };
         this.show = false;
         this.idSelected = 0;
@@ -280,19 +279,18 @@ var EnemiesPage = /** @class */ (function () {
         var _this = this;
         this.show = true;
         this.idSelected = id;
-        var receivedItem;
+        var receivedEnemy;
         this.itemsService.getEnemigo(id)
             .subscribe(function (enemy) {
             receivedEnemy = enemy;
             _this.enemy = receivedEnemy;
         });
     };
-    var _a, _b;
     EnemiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-enemies',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\enemies\enemies.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n<br/><br/>\n\n   <ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>Enemigos</b></ion-item-divider>\n\n	  <div padding *ngIf="show">\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;">Nombre:</ion-label>\n\n        <ion-input type="text" [(ngModel)]="enemy.name" readonly></ion-input> \n\n      </ion-item>\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion:</ion-label>\n\n        <ion-input type="text" [(ngModel)]="enemy.desc" readonly></ion-input>\n\n      </ion-item>\n\n	  <br/><br/>\n\n	    <button (click)="show = !show" ion-fab mini><ion-icon name="arrow-back"></ion-icon></button>\n\n	 </div>\n\n	 <div *ngIf="!show">\n\n    <ion-list style="background: black; color: white;">\n\n      <button ion-item *ngFor="let enemy of enemies" (click)="selectItem(enemy.id)" style="background: black; color: white;">\n\n        Nombre: {{ enemy.name }} | {{enemy.desc}}\n\n      </button> \n\n    </ion-list>\n\n	</div>\n\n</ion-item-group>\n\n</ion-content>'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\enemies\enemies.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]) === "function" ? _b : Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]])
     ], EnemiesPage);
     return EnemiesPage;
 }());
@@ -421,9 +419,9 @@ var CrearobjetoPage = /** @class */ (function () {
     CrearobjetoPage.prototype.clear = function () {
         this.show = false;
         this.idSelected = 0;
-        this.item.name = null;
-        this.item.id = null;
-        this.item.desc = null;
+        this.item.name = "";
+        this.item.id = 0;
+        this.item.desc = "";
     };
     var _a, _b;
     CrearobjetoPage = __decorate([
@@ -446,6 +444,7 @@ var CrearobjetoPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearpersonajePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_items_service__ = __webpack_require__(241);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -457,25 +456,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the CrearpersonajePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 var CrearpersonajePage = /** @class */ (function () {
-    function CrearpersonajePage(navCtrl, navParams) {
+    function CrearpersonajePage(navCtrl, itemsService) {
+        var _this = this;
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
+        this.itemsService = itemsService;
+        this.characters = [];
+        this.character = { id: 0, name: "", desc: "" };
+        this.show = false;
+        this.idSelected = 0;
+        itemsService.getChars().subscribe(function (characters) { _this.characters = characters; });
     }
-    CrearpersonajePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CrearpersonajePage');
+    CrearpersonajePage.prototype.saveChar = function () {
+        if (this.idSelected != 0) {
+            this.itemsService.updateChar(this.character);
+            ;
+        }
+        else {
+            this.itemsService.saveChar(this.character);
+            ;
+        }
+        this.clear();
     };
+    CrearpersonajePage.prototype.selectChar = function (id) {
+        var _this = this;
+        this.show = true;
+        this.idSelected = id;
+        var receivedChar;
+        this.itemsService.getChar(id)
+            .subscribe(function (character) {
+            receivedChar = character;
+            _this.character = receivedChar;
+        });
+    };
+    CrearpersonajePage.prototype.removeSelectedChar = function () {
+        this.itemsService.removeChar(this.idSelected);
+        this.clear();
+    };
+    CrearpersonajePage.prototype.clear = function () {
+        this.show = false;
+        this.idSelected = 0;
+        this.character.name = "";
+        this.character.id = 0;
+        this.character.desc = "";
+    };
+    var _a, _b;
     CrearpersonajePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-crearpersonaje',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n    <form style="margin-top: 30%">\n\n        <ion-item>\n\n            <ion-label floating>Nombre</ion-label>\n\n            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Descripcion</ion-label>\n\n            <ion-input name="descripcion" type="text" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button type="submit" color="primary" block>Crear</button>\n\n        </div>\n\n    </form>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/,
+            selector: 'page-crearpersonaje',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n<br/><br/>\n\n   <ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>PERSONAJES</b></ion-item-divider>\n\n	<div padding *ngIf="show">\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;">Nombre</ion-label>\n\n        <ion-input type="text" [(ngModel)]="character.name" style="background: black; color: white;"></ion-input> \n\n      </ion-item>\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion</ion-label>\n\n        <ion-input type="text" [(ngModel)]="character.desc"></ion-input>\n\n      </ion-item>\n\n        <button (click)="saveChar()" ion-button full>Guardar</button>\n\n        <button *ngIf="idSelected != 0" (click)="removeSelectedChar()" ion-button full color="danger">Borrar</button>\n\n  </div>\n\n    <ion-list style="background: black; color: white;">\n\n      <button ion-item *ngFor="let character of characters" (click)="selectChar(character.id)" style="background: black; color: white;">\n\n        Nombre: {{ character.name }} | {{character.desc}}\n\n      </button>  \n\n    </ion-list>\n\n  <ion-fab bottom right>\n\n      <button (click)="show = !show" ion-fab mini><ion-icon name="add"></ion-icon></button>\n\n    </ion-fab>\n\n</ion-item-group>\n\n</ion-content>'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]) === "function" ? _b : Object])
     ], CrearpersonajePage);
     return CrearpersonajePage;
 }());
@@ -491,6 +522,7 @@ var CrearpersonajePage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearenemigoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_items_service__ = __webpack_require__(241);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -502,25 +534,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the CrearenemigoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 var CrearenemigoPage = /** @class */ (function () {
-    function CrearenemigoPage(navCtrl, navParams) {
+    function CrearenemigoPage(navCtrl, itemsService) {
+        var _this = this;
         this.navCtrl = navCtrl;
-        this.navParams = navParams;
+        this.itemsService = itemsService;
+        this.enemies = [];
+        this.enemy = { id: 0, name: null, desc: null };
+        this.show = false;
+        this.idSelected = 0;
+        itemsService.getEnemigos().subscribe(function (enemies) { _this.enemies = enemies; });
     }
-    CrearenemigoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CrearenemigoPage');
+    CrearenemigoPage.prototype.saveEnemy = function () {
+        if (this.idSelected != 0) {
+            this.itemsService.updateEnemigo(this.enemy);
+            ;
+        }
+        else {
+            this.itemsService.saveEnemigo(this.enemy);
+            ;
+        }
+        this.clear();
     };
+    CrearenemigoPage.prototype.selectEnemy = function (id) {
+        var _this = this;
+        this.show = true;
+        this.idSelected = id;
+        var receivedEnemy;
+        this.itemsService.getEnemigo(id)
+            .subscribe(function (enemy) {
+            receivedEnemy = enemy;
+            _this.enemy = receivedEnemy;
+        });
+    };
+    CrearenemigoPage.prototype.removeSelectedEnemy = function () {
+        this.itemsService.removeEnemigo(this.idSelected);
+        this.clear();
+    };
+    CrearenemigoPage.prototype.clear = function () {
+        this.show = false;
+        this.idSelected = 0;
+        this.enemy.name = "";
+        this.enemy.id = 0;
+        this.enemy.desc = "";
+    };
+    var _a, _b;
     CrearenemigoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-crearenemigo',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n     <form style="margin-top: 30%">\n\n        <ion-item>\n\n            <ion-label floating>Nombre</ion-label>\n\n            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Descripcion</ion-label>\n\n            <ion-input name="descripcion" type="text" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button type="submit" color="primary" block>Crear</button>\n\n        </div>\n\n    </form>\n\n</ion-content>'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/,
+            selector: 'page-crearenemigo',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n<br/><br/>\n\n   <ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>ENEMIGOS</b></ion-item-divider>\n\n	<div padding *ngIf="show">\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;">Nombre</ion-label>\n\n        <ion-input type="text" [(ngModel)]="enemy.name" style="background: black; color: white;"></ion-input> \n\n      </ion-item>\n\n      <ion-item style="background: black; color: white;">\n\n        <ion-label floating style="background: black; color: white;" style="background: black; color: white;">Descripcion</ion-label>\n\n        <ion-input type="text" [(ngModel)]="enemy.desc"></ion-input>\n\n      </ion-item>\n\n        <button (click)="saveEnemy()" ion-button full>Guardar</button>\n\n        <button *ngIf="idSelected != 0" (click)="removeSelectedEnemy()" ion-button full color="danger">Borrar</button>\n\n  </div>\n\n    <ion-list style="background: black; color: white;">\n\n      <button ion-item *ngFor="let enemy of enemies" (click)="selectEnemy(enemy.id)" style="background: black; color: white;">\n\n        Nombre: {{ enemy.name }} | {{enemy.desc}}\n\n      </button>  \n\n    </ion-list>\n\n  <ion-fab bottom right>\n\n      <button (click)="show = !show" ion-fab mini><ion-icon name="add"></ion-icon></button>\n\n    </ion-fab>\n\n</ion-item-group>\n\n</ion-content>'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]) === "function" ? _b : Object])
     ], CrearenemigoPage);
     return CrearenemigoPage;
 }());

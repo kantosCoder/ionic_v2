@@ -14,7 +14,7 @@ import {ItemsService} from '../../services/items.service';
 export class CharactersPage {
 idSelected:any; 
 	show:boolean; 
-	character = [];
+	characters = [];
 	character = {id:0, name:null, desc:null}; 
     constructor(public navCtrl: NavController, public itemsService:ItemsService){ 
 	this.show = false; 

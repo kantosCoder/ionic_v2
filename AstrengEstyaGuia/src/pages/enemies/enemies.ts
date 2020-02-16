@@ -24,7 +24,7 @@ export class EnemiesPage {
 	selectItem(id){ 
     this.show = true;
     this.idSelected = id;
-    let receivedItem:any; 
+    let receivedEnemy:any; 
     this.itemsService.getEnemigo(id)
     .subscribe(enemy=>{
       receivedEnemy = enemy;
