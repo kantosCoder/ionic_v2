@@ -18,6 +18,7 @@ import {ItemsService} from '../../services/items.service';
   templateUrl: 'crearobjeto.html',
 })
 export class CrearobjetoPage {
+	fruit = {id:0, name:null, quantity:null}; //Declaramos un objeto vacio de fruta
 	fileName:string = 'archivo.txt';
     constructor(public navCtrl: NavController, public itemsService:ItemsService){ }
 
@@ -26,12 +27,12 @@ export class CrearobjetoPage {
   }
 
   ionViewWillEnter(){
-   this.itemsService.addUser();
+
 }
 // Here we import the File System module of node
+
 saveFruit(){
-      this.itemsService.saveItem('paco','sanz');
-    this.clear();
+      this.itemsService.saveItem(this.fruit);;
   }
    
   

@@ -20,7 +20,7 @@ export class ItemsService{
         //Guardamos la fruta y obetenemos el id que firebase pone al nudulo de nuestra fruta.
         //Al guardarse sin id nuestra fruta, ahora la actualizamos con el id que firebase nos devuelve.
         fruit.id = key;
-        this.afDB.database.ref('fruits/'+fruit.id).set(fruit);
+        this.afDB.database.ref('enemigos/'+fruit.id).set(fruit);
        
     }
 	public addUser(){

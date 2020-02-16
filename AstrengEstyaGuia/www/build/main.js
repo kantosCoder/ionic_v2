@@ -1,34 +1,48 @@
 webpackJsonp([13],{
 
-/***/ 1152:
+/***/ 1089:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1153:
+/***/ 1091:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1254:
+/***/ 1139:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1255:
+/***/ 1140:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1257:
+/***/ 1241:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 1242:
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 1244:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -37,18 +51,18 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 1257;
+webpackEmptyContext.id = 1244;
 
 /***/ }),
 
-/***/ 1298:
+/***/ 1285:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 1409:
+/***/ 1396:
 /***/ (function(module, exports) {
 
 /* (ignored) */
@@ -90,7 +104,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -107,7 +121,7 @@ var MyApp = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ObjectDataProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -151,11 +165,11 @@ var ObjectDataProvider = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrincipalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history_history__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__items_items__ = __webpack_require__(375);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__characters_characters__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__enemies_enemies__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__history_history__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__items_items__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__characters_characters__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__enemies_enemies__ = __webpack_require__(381);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -200,7 +214,7 @@ var PrincipalPage = /** @class */ (function () {
     };
     PrincipalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-principal',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\principal\principal.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n<br/><br/>\n\n<h2>Menú principal</h2>\n\n<br/>\n\n	<ion-list style="background: black; color: white;">\n\n	<ion-item style="background: black; color: white;">\n\n	</ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="albums" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("history")\' style="background: black; color: white;">La historia hasta ahora</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-icon name="map" item-end></ion-icon>\n\n      <ion-label (click)=\'topage("map")\' style="background: black; color: white;">El mundo del juego</ion-label>\n\n	 </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="trophy" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("items")\' style="background: black; color: white;">Objetos</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="person" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("chars")\' style="background: black; color: white;">Personajes</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="sad" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("enemy")\' style="background: black; color: white;">Enemigos</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n	</ion-item>\n\n</ion-list>\n\n<!--\n\nCosillas útiles para pantalla de config\n\n<ion-list>\n\n  <ion-item>\n\n    <ion-label>Input</ion-label>\n\n    <ion-input></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Toggle</ion-label>\n\n    <ion-toggle slot="end"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Radio</ion-label>\n\n    <ion-radio slot="end"></ion-radio>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Checkbox</ion-label>\n\n    <ion-checkbox slot="start"></ion-checkbox>\n\n  </ion-item>\n\n</ion-list>\n\n-->\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\principal\principal.html"*/,
+            selector: 'page-principal',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\principal\principal.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n<br/><br/>\n\n<h2>Menú principal</h2>\n\n<br/>\n\n	<ion-list style="background: black; color: white;">\n\n	<ion-item style="background: black; color: white;">\n\n	</ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="albums" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("history")\' style="background: black; color: white;">La historia hasta ahora</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-icon name="map" item-end></ion-icon>\n\n      <ion-label (click)=\'topage("map")\' style="background: black; color: white;">El mundo del juego</ion-label>\n\n	 </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="trophy" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("items")\' style="background: black; color: white;">Objetos</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="person" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("chars")\' style="background: black; color: white;">Personajes</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n  <ion-icon name="sad" item-end></ion-icon>\n\n    <ion-label (click)=\'topage("enemy")\' style="background: black; color: white;">Enemigos</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n	</ion-item>\n\n</ion-list>\n\n<!--\n\nCosillas útiles para pantalla de config\n\n<ion-list>\n\n  <ion-item>\n\n    <ion-label>Input</ion-label>\n\n    <ion-input></ion-input>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Toggle</ion-label>\n\n    <ion-toggle slot="end"></ion-toggle>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Radio</ion-label>\n\n    <ion-radio slot="end"></ion-radio>\n\n  </ion-item>\n\n  <ion-item>\n\n    <ion-label>Checkbox</ion-label>\n\n    <ion-checkbox slot="start"></ion-checkbox>\n\n  </ion-item>\n\n</ion-list>\n\n-->\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\principal\principal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], PrincipalPage);
@@ -245,7 +259,7 @@ var AcercadePage = /** @class */ (function () {
     };
     AcercadePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-acercade',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\acercade\acercade.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white; font-size: 24px" align="center">\n\n    <p style="margin-top: 75%; ;font-size:22px;">Aplicación desarrollada por<br><br>Hector Cantos <br>y<br> Miguel Angel Marquina</p>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\acercade\acercade.html"*/,
+            selector: 'page-acercade',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\acercade\acercade.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white; font-size: 24px" align="center">\n\n    <p style="margin-top: 75%; ;font-size:22px;">Aplicación desarrollada por<br><br>Hector Cantos <br>y<br> Miguel Angel Marquina</p>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\acercade\acercade.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], AcercadePage);
@@ -260,11 +274,263 @@ var AcercadePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CharactersPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CharactersPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CharactersPage = /** @class */ (function () {
+    function CharactersPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CharactersPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CharactersPage');
+    };
+    CharactersPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-characters',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\characters\characters.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\characters\characters.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], CharactersPage);
+    return CharactersPage;
+}());
+
+//# sourceMappingURL=characters.js.map
+
+/***/ }),
+
+/***/ 373:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearenemigoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CrearenemigoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CrearenemigoPage = /** @class */ (function () {
+    function CrearenemigoPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CrearenemigoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CrearenemigoPage');
+    };
+    CrearenemigoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-crearenemigo',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n     <form style="margin-top: 30%">\n\n        <ion-item>\n\n            <ion-label floating>Nombre</ion-label>\n\n            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Descripcion</ion-label>\n\n            <ion-input name="descripcion" type="text" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button type="submit" color="primary" block>Crear</button>\n\n        </div>\n\n    </form>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], CrearenemigoPage);
+    return CrearenemigoPage;
+}());
+
+//# sourceMappingURL=crearenemigo.js.map
+
+/***/ }),
+
+/***/ 374:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearnuevosPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__crearobjeto_crearobjeto__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__crearpersonaje_crearpersonaje__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__crearenemigo_crearenemigo__ = __webpack_require__(373);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the CrearnuevosPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CrearnuevosPage = /** @class */ (function () {
+    function CrearnuevosPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CrearnuevosPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CrearnuevosPage');
+    };
+    CrearnuevosPage.prototype.IrAObjetos = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__crearobjeto_crearobjeto__["a" /* CrearobjetoPage */]);
+    };
+    CrearnuevosPage.prototype.IrAEnemigos = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__crearenemigo_crearenemigo__["a" /* CrearenemigoPage */]);
+    };
+    CrearnuevosPage.prototype.IrAPersonajes = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__crearpersonaje_crearpersonaje__["a" /* CrearpersonajePage */]);
+    };
+    CrearnuevosPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-crearnuevos',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearnuevos\crearnuevos.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n<ion-item-divider color="light" style="background: black; color: white; margin-top: 55%"><b>OBJETOS</b></ion-item-divider>\n\n<ion-list>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-label (click)="IrAObjetos()">Objetos</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-label (click)="IrAPersonajes()">Personajes</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-label (click)="IrAEnemigos()">Enemigos</ion-label>\n\n  </ion-item>\n\n</ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearnuevos\crearnuevos.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], CrearnuevosPage);
+    return CrearnuevosPage;
+}());
+
+//# sourceMappingURL=crearnuevos.js.map
+
+/***/ }),
+
+/***/ 375:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearobjetoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_items_service__ = __webpack_require__(437);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the CrearobjetoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CrearobjetoPage = /** @class */ (function () {
+    function CrearobjetoPage(navCtrl, itemsService) {
+        this.navCtrl = navCtrl;
+        this.itemsService = itemsService;
+        this.fruit = { id: 0, name: null, quantity: null }; //Declaramos un objeto vacio de fruta
+        this.fileName = 'archivo.txt';
+    }
+    CrearobjetoPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CrearobjetoPage');
+    };
+    CrearobjetoPage.prototype.ionViewWillEnter = function () {
+    };
+    // Here we import the File System module of node
+    CrearobjetoPage.prototype.saveFruit = function () {
+        this.itemsService.saveItem(this.fruit);
+        ;
+    };
+    var _a, _b;
+    CrearobjetoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-crearobjeto',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearobjeto\crearobjeto.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n      <div padding *ngIf="show"><!--Comprobamos si la variable show esta en true, si es asi se muestran los campos-->\n\n      <ion-item>\n\n        <ion-label floating>Nombre</ion-label>\n\n        <ion-input type="text" [(ngModel)]="fruit.name"></ion-input> <!--Mediante el atributo ngModel, este campo tendrá el valor del name de la fruta-->\n\n      </ion-item>\n\n      <ion-item>\n\n        <ion-label floating>Cantidad</ion-label>\n\n        <ion-input type="text" [(ngModel)]="fruit.quantity"></ion-input><!--Mediante el atributo ngModel, este campo tendrá el valor del quantity de la fruta-->\n\n      </ion-item>\n\n        <button (click)="saveFruit()" ion-button full>Guardar</button><!--Mediante el atributo click, llamará a nuestra funcion de guardar fruta en home.ts-->\n\n        <button *ngIf="idSelected != 0" (click)="removeSelectedFruit()" ion-button full color="danger">Borrar</button>\n\n        <!--Solo aparecerá si idSelected es diferente a 0, Mediante el atributo click, llamará a nuestra funcion de remove fruta en home.ts-->\n\n  </div>\n\n    <ion-list>\n\n      <button ion-item *ngFor="let fruit of fruits" (click)="selectFruit(fruit.id)"><!--Recorremos el array fruits que hemos cargado en el constructor home.ts-->\n\n        Nombre: {{ fruit.name }} | Unidades: {{fruit.quantity}} <!--Mostramos el nombre y la cantidad-->\n\n      </button>  \n\n    </ion-list>\n\n  <ion-fab bottom right>\n\n      <button (click)="show = !show" ion-fab mini><ion-icon name="add"></ion-icon></button><!--Con este botón mostramos u ocultamos los campos-->\n\n    </ion-fab>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearobjeto\crearobjeto.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]) === "function" ? _b : Object])
+    ], CrearobjetoPage);
+    return CrearobjetoPage;
+}());
+
+//# sourceMappingURL=crearobjeto.js.map
+
+/***/ }),
+
+/***/ 376:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearpersonajePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CrearpersonajePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CrearpersonajePage = /** @class */ (function () {
+    function CrearpersonajePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CrearpersonajePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CrearpersonajePage');
+    };
+    CrearpersonajePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-crearpersonaje',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n    <form style="margin-top: 30%">\n\n        <ion-item>\n\n            <ion-label floating>Nombre</ion-label>\n\n            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Descripcion</ion-label>\n\n            <ion-input name="descripcion" type="text" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button type="submit" color="primary" block>Crear</button>\n\n        </div>\n\n    </form>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    ], CrearpersonajePage);
+    return CrearpersonajePage;
+}());
+
+//# sourceMappingURL=crearpersonaje.js.map
+
+/***/ }),
+
+/***/ 377:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminpanelPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__principal_principal__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__crearnuevos_crearnuevos__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__crearnuevos_crearnuevos__ = __webpack_require__(374);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -300,7 +566,7 @@ var AdminpanelPage = /** @class */ (function () {
     };
     AdminpanelPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-adminpanel',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\adminpanel\adminpanel.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n  <button ion-button color="tertiary" (click)="IrAPagina()"> <ion-icon ios="ios-wine" md="md-wine"> Cosas</ion-icon> </button>\n\n    \n\n  <button ion-button color="tertiary" (click)="IrCrear()"> <ion-icon ios="ios-wine" md="md-wine"> Crear</ion-icon> </button>\n\n    \n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\adminpanel\adminpanel.html"*/,
+            selector: 'page-adminpanel',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\adminpanel\adminpanel.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n  <button ion-button color="tertiary" (click)="IrAPagina()"> <ion-icon ios="ios-wine" md="md-wine"> Cosas</ion-icon> </button>\n\n    \n\n  <button ion-button color="tertiary" (click)="IrCrear()"> <ion-icon ios="ios-wine" md="md-wine"> Crear</ion-icon> </button>\n\n    \n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\adminpanel\adminpanel.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], AdminpanelPage);
@@ -311,7 +577,7 @@ var AdminpanelPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 373:
+/***/ 378:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -339,7 +605,7 @@ var HistoryPage = /** @class */ (function () {
     };
     HistoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-history',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\history\history.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n<br/><br/>\n\n<ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>La historia hasta ahora</b></ion-item-divider>\n\nTu vida es la misma de siempre. Todos los días vas a trabajar para ganar dinero y seguir vivo pero, ¿Para qué? todos los días son iguales, o al menos, lo eran hasta que un día, \n\nen el que como cualquier otro, fuiste a hacer la compra, cuando de pronto un encuentro inesperado hizo que todo lo que conocías se tambalee...\n\n<br/><br/>\n\nEn Astreng, nada es lo que parece, pero\n\na la vez, todo te resulta familiar.\n\n¿Qué sentido tiene todo esto? Descubrelo embarcandote en esta épica aventura de acción en la que tendrás que resolver los misterios de Astreng-Estya, un mundo\n\nque parece estar ligado de alguna forma con el tuyo.\n\n</ion-item-group>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\history\history.html"*/,
+            selector: 'page-history',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\history\history.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n<br/><br/>\n\n<ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>La historia hasta ahora</b></ion-item-divider>\n\nTu vida es la misma de siempre. Todos los días vas a trabajar para ganar dinero y seguir vivo pero, ¿Para qué? todos los días son iguales, o al menos, lo eran hasta que un día, \n\nen el que como cualquier otro, fuiste a hacer la compra, cuando de pronto un encuentro inesperado hizo que todo lo que conocías se tambalee...\n\n<br/><br/>\n\nEn Astreng, nada es lo que parece, pero\n\na la vez, todo te resulta familiar.\n\n¿Qué sentido tiene todo esto? Descubrelo embarcandote en esta épica aventura de acción en la que tendrás que resolver los misterios de Astreng-Estya, un mundo\n\nque parece estar ligado de alguna forma con el tuyo.\n\n</ion-item-group>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\history\history.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], HistoryPage);
@@ -350,7 +616,7 @@ var HistoryPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 374:
+/***/ 379:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -378,7 +644,7 @@ var MapPage = /** @class */ (function () {
     };
     MapPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-map',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\map\map.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/mapa.png\'); background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\map\map.html"*/,
+            selector: 'page-map',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\map\map.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/mapa.png\'); background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\map\map.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], MapPage);
@@ -389,17 +655,17 @@ var MapPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 375:
+/***/ 380:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(262);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_xml2js__ = __webpack_require__(790);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_xml2js__ = __webpack_require__(1497);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_xml2js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_xml2js__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -469,7 +735,7 @@ var ItemsPage = /** @class */ (function () {
     };
     ItemsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-items',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\items\items.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n<br/><br/>\n\n   <ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>OBJETOS</b></ion-item-divider>\n\n      <ion-item *ngFor="let item of xmlItems" style="background: black; color: white;">\n\n	  <ion-icon name="flask" item-start style="background: black; color: white;"></ion-icon>\n\n         <b>{{ item.nombre }}</b><br/>\n\n		 <i>{{ item.descripcion }}</i>\n\n      </ion-item>\n\n   </ion-item-group>\n\n</ion-content>'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\items\items.html"*/,
+            selector: 'page-items',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\items\items.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n<br/><br/>\n\n   <ion-item-group style="background: black; color: white;">\n\n      <ion-item-divider color="light" style="background: black; color: white;"><b>OBJETOS</b></ion-item-divider>\n\n      <ion-item *ngFor="let item of xmlItems" style="background: black; color: white;">\n\n	  <ion-icon name="flask" item-start style="background: black; color: white;"></ion-icon>\n\n         <b>{{ item.nombre }}</b><br/>\n\n		 <i>{{ item.descripcion }}</i>\n\n      </ion-item>\n\n   </ion-item-group>\n\n</ion-content>'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\items\items.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]])
     ], ItemsPage);
@@ -480,52 +746,7 @@ var ItemsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 376:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CharactersPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CharactersPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CharactersPage = /** @class */ (function () {
-    function CharactersPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CharactersPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CharactersPage');
-    };
-    CharactersPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-characters',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\characters\characters.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\characters\characters.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], CharactersPage);
-    return CharactersPage;
-}());
-
-//# sourceMappingURL=characters.js.map
-
-/***/ }),
-
-/***/ 377:
+/***/ 381:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -559,7 +780,7 @@ var EnemiesPage = /** @class */ (function () {
     };
     EnemiesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-enemies',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\enemies\enemies.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\enemies\enemies.html"*/,
+            selector: 'page-enemies',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\enemies\enemies.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\enemies\enemies.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], EnemiesPage);
@@ -567,213 +788,6 @@ var EnemiesPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=enemies.js.map
-
-/***/ }),
-
-/***/ 378:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearnuevosPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__crearobjeto_crearobjeto__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__crearpersonaje_crearpersonaje__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__crearenemigo_crearenemigo__ = __webpack_require__(381);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-/**
- * Generated class for the CrearnuevosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CrearnuevosPage = /** @class */ (function () {
-    function CrearnuevosPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CrearnuevosPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CrearnuevosPage');
-    };
-    CrearnuevosPage.prototype.IrAObjetos = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__crearobjeto_crearobjeto__["a" /* CrearobjetoPage */]);
-    };
-    CrearnuevosPage.prototype.IrAEnemigos = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__crearenemigo_crearenemigo__["a" /* CrearenemigoPage */]);
-    };
-    CrearnuevosPage.prototype.IrAPersonajes = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__crearpersonaje_crearpersonaje__["a" /* CrearpersonajePage */]);
-    };
-    CrearnuevosPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-crearnuevos',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearnuevos\crearnuevos.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n<ion-item-divider color="light" style="background: black; color: white; margin-top: 55%"><b>OBJETOS</b></ion-item-divider>\n\n<ion-list>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-label (click)="IrAObjetos()">Objetos</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-label (click)="IrAPersonajes()">Personajes</ion-label>\n\n  </ion-item>\n\n  <ion-item style="background: black; color: white;">\n\n    <ion-label (click)="IrAEnemigos()">Enemigos</ion-label>\n\n  </ion-item>\n\n</ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearnuevos\crearnuevos.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], CrearnuevosPage);
-    return CrearnuevosPage;
-}());
-
-//# sourceMappingURL=crearnuevos.js.map
-
-/***/ }),
-
-/***/ 379:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearobjetoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_items_service__ = __webpack_require__(452);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the CrearobjetoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CrearobjetoPage = /** @class */ (function () {
-    function CrearobjetoPage(navCtrl, itemsService) {
-        this.navCtrl = navCtrl;
-        this.itemsService = itemsService;
-        this.fileName = 'archivo.txt';
-    }
-    CrearobjetoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CrearobjetoPage');
-    };
-    CrearobjetoPage.prototype.ionViewWillEnter = function () {
-        this.itemsService.addUser();
-    };
-    // Here we import the File System module of node
-    CrearobjetoPage.prototype.saveFruit = function () {
-        this.itemsService.saveItem('paco', 'sanz');
-        this.clear();
-    };
-    var _a, _b;
-    CrearobjetoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-crearobjeto',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearobjeto\crearobjeto.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n     <form style="margin-top: 30%">\n\n        <ion-item>\n\n            <ion-label floating>Nombre</ion-label>\n\n            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Descripcion</ion-label>\n\n            <ion-input name="descripcion" type="text" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button type="submit" color="primary" block>Crear</button>\n\n        </div>\n\n    </form>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearobjeto\crearobjeto.html"*/,
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_items_service__["a" /* ItemsService */]) === "function" ? _b : Object])
-    ], CrearobjetoPage);
-    return CrearobjetoPage;
-}());
-
-//# sourceMappingURL=crearobjeto.js.map
-
-/***/ }),
-
-/***/ 380:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearpersonajePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CrearpersonajePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CrearpersonajePage = /** @class */ (function () {
-    function CrearpersonajePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CrearpersonajePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CrearpersonajePage');
-    };
-    CrearpersonajePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-crearpersonaje',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n    <form style="margin-top: 30%">\n\n        <ion-item>\n\n            <ion-label floating>Nombre</ion-label>\n\n            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Descripcion</ion-label>\n\n            <ion-input name="descripcion" type="text" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button type="submit" color="primary" block>Crear</button>\n\n        </div>\n\n    </form>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearpersonaje\crearpersonaje.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], CrearpersonajePage);
-    return CrearpersonajePage;
-}());
-
-//# sourceMappingURL=crearpersonaje.js.map
-
-/***/ }),
-
-/***/ 381:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CrearenemigoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the CrearenemigoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CrearenemigoPage = /** @class */ (function () {
-    function CrearenemigoPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    CrearenemigoPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CrearenemigoPage');
-    };
-    CrearenemigoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-crearenemigo',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/'<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white" align="center">\n\n\n\n    \n\n     <form style="margin-top: 30%">\n\n        <ion-item>\n\n            <ion-label floating>Nombre</ion-label>\n\n            <ion-input name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item>\n\n            <ion-label floating>Descripcion</ion-label>\n\n            <ion-input name="descripcion" type="text" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button type="submit" color="primary" block>Crear</button>\n\n        </div>\n\n    </form>\n\n    \n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\crearenemigo\crearenemigo.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
-    ], CrearenemigoPage);
-    return CrearenemigoPage;
-}());
-
-//# sourceMappingURL=crearenemigo.js.map
 
 /***/ }),
 
@@ -803,27 +817,27 @@ var map = {
 		12
 	],
 	"../pages/adminpanel/adminpanel.module": [
-		1541,
+		1546,
 		11
 	],
 	"../pages/characters/characters.module": [
-		1542,
+		1541,
 		10
 	],
 	"../pages/crearenemigo/crearenemigo.module": [
-		1543,
+		1542,
 		9
 	],
 	"../pages/crearnuevos/crearnuevos.module": [
-		1544,
+		1543,
 		8
 	],
 	"../pages/crearobjeto/crearobjeto.module": [
-		1545,
+		1544,
 		7
 	],
 	"../pages/crearpersonaje/crearpersonaje.module": [
-		1546,
+		1545,
 		6
 	],
 	"../pages/enemies/enemies.module": [
@@ -831,15 +845,15 @@ var map = {
 		5
 	],
 	"../pages/history/history.module": [
-		1548,
+		1552,
 		4
 	],
 	"../pages/items/items.module": [
-		1549,
+		1548,
 		3
 	],
 	"../pages/login/login.module": [
-		1550,
+		1549,
 		0
 	],
 	"../pages/map/map.module": [
@@ -847,7 +861,7 @@ var map = {
 		2
 	],
 	"../pages/principal/principal.module": [
-		1552,
+		1550,
 		1
 	]
 };
@@ -867,13 +881,13 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 452:
+/***/ 437:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ItemsService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_fire_database__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_fire_database__ = __webpack_require__(438);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -898,10 +912,10 @@ var ItemsService = /** @class */ (function () {
         //Guardamos la fruta y obetenemos el id que firebase pone al nudulo de nuestra fruta.
         //Al guardarse sin id nuestra fruta, ahora la actualizamos con el id que firebase nos devuelve.
         fruit.id = key;
-        this.afDB.database.ref('fruits/' + fruit.id).set(fruit);
+        this.afDB.database.ref('enemigos/' + fruit.id).set(fruit);
     };
     ItemsService.prototype.addUser = function () {
-        var admin = __webpack_require__(1103);
+        var admin = __webpack_require__(1080);
         admin.initializeApp({
             credential: admin.credential.applicationDefault(),
             databaseURL: 'https://astrengestya.firebaseio.com'
@@ -926,10 +940,9 @@ var ItemsService = /** @class */ (function () {
         this.afDB.database.ref('fruits/' + id).remove();
         //Borrará la fruta con el id que le pasamos por parametro
     };
-    var _a;
     ItemsService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_fire_database__["AngularFireDatabase"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_fire_database__["AngularFireDatabase"]) === "function" ? _a : Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_fire_database__["AngularFireDatabase"]])
     ], ItemsService);
     return ItemsService;
 }());
@@ -938,7 +951,7 @@ var ItemsService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 603:
+/***/ 596:
 /***/ (function(module, exports) {
 
 /* (ignored) */
@@ -953,7 +966,7 @@ var ItemsService = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__principal_principal__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__acercade_acercade__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__adminpanel_adminpanel__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__adminpanel_adminpanel__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__ = __webpack_require__(761);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(44);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1021,12 +1034,11 @@ var HomePage = /** @class */ (function () {
             alert.present();
         });
     };
-    var _a, _b, _c, _d;
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"D:\Ionic_app\AstrengEstyaGuia\src\pages\home\home.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto;">\n\n    <form style="margin-top: 40%">\n\n        <ion-item style="background: transparent; color: white;">\n\n            <ion-label floating>Email</ion-label>\n\n            <ion-input [(ngModel)]="user.email" name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item style="background: transparent; color: white;">\n\n            <ion-label floating>Contraseña</ion-label>\n\n            <ion-input [(ngModel)]="user.password" name="password" type="password" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button (click)="login()" type="submit" color="dark" block>Login&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon>\n\n</button>\n\n            <button ion-button (click)="signin()" type="submit" color="dark" block>Registro&nbsp;&nbsp;<ion-icon ios="ios-create" md="md-create"></ion-icon></button>\n\n        </div>\n\n    \n\n    \n\n    </form>\n\n  <button ion-button color="tertiary" (click)="IrAPagina()"> <ion-icon ios="ios-wine" md="md-wine"> Toma login xd</ion-icon> </button>\n\n    \n\n  <button ion-button color="tertiary" (click)="IrAdminpanel()"> <ion-icon ios="ios-wine" md="md-wine"> Admin</ion-icon> </button>\n\n    \n\n      \n\n  <button ion-button color="dark" (click)="IrAcerca()" style="margin-top: 30%; margin-left: 30%">Acerca de&nbsp;&nbsp;<ion-icon ios="ios-people" md="md-people"></ion-icon> </button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Ionic_app\AstrengEstyaGuia\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\ionic_v2\AstrengEstyaGuia\src\pages\home\home.html"*/'\n\n<ion-content padding style="background-image: url(\'assets/imgs/fondo.jpg\');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto;">\n\n    <form style="margin-top: 40%">\n\n        <ion-item style="background: transparent; color: white;">\n\n            <ion-label floating>Email</ion-label>\n\n            <ion-input [(ngModel)]="user.email" name="email" type="text" autocapitalize="off" required></ion-input>\n\n        </ion-item>\n\n        <ion-item style="background: transparent; color: white;">\n\n            <ion-label floating>Contraseña</ion-label>\n\n            <ion-input [(ngModel)]="user.password" name="password" type="password" required></ion-input>\n\n        </ion-item>\n\n        \n\n        <div padding>\n\n            <button ion-button (click)="login()" type="submit" color="dark" block>Login&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle"></ion-icon>\n\n</button>\n\n            <button ion-button (click)="signin()" type="submit" color="dark" block>Registro&nbsp;&nbsp;<ion-icon ios="ios-create" md="md-create"></ion-icon></button>\n\n        </div>\n\n    \n\n    \n\n    </form>\n\n  <button ion-button color="tertiary" (click)="IrAPagina()"> <ion-icon ios="ios-wine" md="md-wine"> Toma login xd</ion-icon> </button>\n\n    \n\n  <button ion-button color="tertiary" (click)="IrAdminpanel()"> <ion-icon ios="ios-wine" md="md-wine"> Admin</ion-icon> </button>\n\n    \n\n      \n\n  <button ion-button color="dark" (click)="IrAcerca()" style="margin-top: 30%; margin-left: 30%">Acerca de&nbsp;&nbsp;<ion-icon ios="ios-people" md="md-people"></ion-icon> </button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\ionic_v2\AstrengEstyaGuia\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["f" /* NavController */]) === "function" ? _a : Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["g" /* NavParams */]) === "function" ? _b : Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */]) === "function" ? _c : Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["a" /* AlertController */]) === "function" ? _d : Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */], __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["a" /* AlertController */]])
     ], HomePage);
     return HomePage;
 }());
@@ -1044,7 +1056,7 @@ var HomePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__ = __webpack_require__(762);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_angularfire2_auth__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__firebase_auth__ = __webpack_require__(764);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__firebase_database__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__firebase_database__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__firebase_database___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__firebase_database__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__firebase_firestore__ = __webpack_require__(1535);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__firebase_firestore___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__firebase_firestore__);
@@ -1116,17 +1128,17 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(1530);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(760);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_principal_principal__ = __webpack_require__(223);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_history_history__ = __webpack_require__(373);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_map_map__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_items_items__ = __webpack_require__(375);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_characters_characters__ = __webpack_require__(376);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_enemies_enemies__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_history_history__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_map_map__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_items_items__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_characters_characters__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_enemies_enemies__ = __webpack_require__(381);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_acercade_acercade__ = __webpack_require__(371);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_crearobjeto_crearobjeto__ = __webpack_require__(379);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_crearpersonaje_crearpersonaje__ = __webpack_require__(380);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_crearenemigo_crearenemigo__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_crearnuevos_crearnuevos__ = __webpack_require__(378);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_adminpanel_adminpanel__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_crearobjeto_crearobjeto__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_crearpersonaje_crearpersonaje__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_crearenemigo_crearenemigo__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_crearnuevos_crearnuevos__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_adminpanel_adminpanel__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2__ = __webpack_require__(1537);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_angularfire2___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_angularfire2__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angularfire2_database__ = __webpack_require__(1538);
@@ -1135,8 +1147,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angularfire2_auth___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_angularfire2_auth__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_auth_auth__ = __webpack_require__(761);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_object_data_object_data__ = __webpack_require__(1539);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__angular_common_http__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_items_service__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__angular_common_http__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_items_service__ = __webpack_require__(437);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1205,18 +1217,18 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/acercade/acercade.module#AcercadePageModule', name: 'AcercadePage', segment: 'acercade', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/adminpanel/adminpanel.module#AdminpanelPageModule', name: 'AdminpanelPage', segment: 'adminpanel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/characters/characters.module#CharactersPageModule', name: 'CharactersPage', segment: 'characters', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crearenemigo/crearenemigo.module#CrearenemigoPageModule', name: 'CrearenemigoPage', segment: 'crearenemigo', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crearnuevos/crearnuevos.module#CrearnuevosPageModule', name: 'CrearnuevosPage', segment: 'crearnuevos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crearobjeto/crearobjeto.module#CrearobjetoPageModule', name: 'CrearobjetoPage', segment: 'crearobjeto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crearpersonaje/crearpersonaje.module#CrearpersonajePageModule', name: 'CrearpersonajePage', segment: 'crearpersonaje', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/adminpanel/adminpanel.module#AdminpanelPageModule', name: 'AdminpanelPage', segment: 'adminpanel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/enemies/enemies.module#EnemiesPageModule', name: 'EnemiesPage', segment: 'enemies', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/history/history.module#HistoryPageModule', name: 'HistoryPage', segment: 'history', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/items/items.module#ItemsPageModule', name: 'ItemsPage', segment: 'items', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/principal/principal.module#PrincipalPageModule', name: 'PrincipalPage', segment: 'principal', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/map/map.module#MapPageModule', name: 'MapPage', segment: 'map', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/principal/principal.module#PrincipalPageModule', name: 'PrincipalPage', segment: 'principal', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/history/history.module#HistoryPageModule', name: 'HistoryPage', segment: 'history', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_19_angularfire2__["AngularFireModule"].initializeApp(firebaseConfig),
@@ -1255,20 +1267,6 @@ var AppModule = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=app.module.js.map
-
-/***/ }),
-
-/***/ 803:
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 805:
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ })
 
