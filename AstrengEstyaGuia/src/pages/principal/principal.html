@@ -1,0 +1,53 @@
+
+<ion-content padding style="background-image: url('assets/imgs/fondo.jpg');   background-repeat: no-repeat; position: relative; margin-left: auto; margin-right: auto; color: white">
+<br/><br/>
+<h2>Menú principal</h2>
+<br/>
+	<ion-list style="background: black; color: white;">
+	<ion-item style="background: black; color: white;">
+	</ion-item>
+  <ion-item style="background: black; color: white;">
+  <ion-icon name="albums" item-end></ion-icon>
+    <ion-label (click)='topage("history")' style="background: black; color: white;">La historia hasta ahora</ion-label>
+  </ion-item>
+  <ion-item style="background: black; color: white;">
+    <ion-icon name="map" item-end></ion-icon>
+      <ion-label (click)='topage("map")' style="background: black; color: white;">El mundo del juego</ion-label>
+	 </ion-item>
+  <ion-item style="background: black; color: white;">
+  <ion-icon name="trophy" item-end></ion-icon>
+    <ion-label (click)='topage("items")' style="background: black; color: white;">Objetos</ion-label>
+  </ion-item>
+  <ion-item style="background: black; color: white;">
+  <ion-icon name="person" item-end></ion-icon>
+    <ion-label (click)='topage("chars")' style="background: black; color: white;">Personajes</ion-label>
+  </ion-item>
+  <ion-item style="background: black; color: white;">
+  <ion-icon name="sad" item-end></ion-icon>
+    <ion-label (click)='topage("enemy")' style="background: black; color: white;">Enemigos</ion-label>
+  </ion-item>
+  <ion-item style="background: black; color: white;">
+	</ion-item>
+</ion-list>
+<!--
+Cosillas útiles para pantalla de config
+<ion-list>
+  <ion-item>
+    <ion-label>Input</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Toggle</ion-label>
+    <ion-toggle slot="end"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>Radio</ion-label>
+    <ion-radio slot="end"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Checkbox</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+  </ion-item>
+</ion-list>
+-->
+</ion-content>

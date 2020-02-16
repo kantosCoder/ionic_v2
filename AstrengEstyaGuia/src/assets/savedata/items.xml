@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<items> 
+	<item>
+      <id>1</id>
+      <nombre>Pocion de salud</nombre>
+	  <descripcion>Una pocion de salud estandard</descripcion>
+	</item>
+	<item>
+      <id>2</id>
+      <nombre>Escudo de cuero</nombre>
+	  <descripcion>El tipico escudo</descripcion>
+	</item>
+</items>

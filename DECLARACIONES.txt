@@ -1,0 +1,6 @@
+providers:
+object_data(ObjectDataProvider) para la gestión de objetos(ItemsPage).
+
+paginas:
+HomePage, PrincipalPage, HistoryPage, EnemiesPage
+ItemsPage, LoginPage, MapPage, CharatersPage.

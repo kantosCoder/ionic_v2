@@ -1,0 +1,52 @@
+1- te metes en esta carpeta
+2- Abres cmd
+3- pones: cd AstrengEstyaGuia
+4- pones ionic serve --lab
+
+
+------COMO GENERAR UNA PAGINA-------
+1- ionic generate page JOSE
+2- Entrar en src/app/app.module.ts
+3- import { JosePage } from '../pages/jose/jose'; y abajo poner JosePage en todas las que ponga AlgoPage
+
+4- En cada pagina donde vayamos a llamar a la pagina nueva (entrando con un boton, por ejemplo), debemos poner "import { ListPage } from '../jose/jose';" en el .ts
+
+-----PARSER XML------
+para descargar el parser XML: (guia en https://masteringionic.com/blog/2016-12-18-parsing-xml-csv-and-tsv-files-with-ionic/)
+1- Ir a la carpeta raiz del proyecto:
+2- En CMD: npm install xml2js
+3- por organizacion, vamos a usar el directorio AstrengEstyaGuia\src\assets\savedata para los guardados en XML
+4- Generaremos nuestro xml con su estructura.
+5- En el app.module.ts importamos: 
+ import { HttpClientModule } from '@angular/common/http';
+y mas abajo:
+imports: [
+    HttpClientModule
+  ],
+
+6- En el ts que vayamos a usar el parser, importamos:
+ import { HttpClient } from '@angular/common/http';
+ import { HttpHeaders } from '@angular/common/http';
+ import 'rxjs/add/operator/map';
+ import xml2js from 'xml2js';
+
+
+---OTROS-----
+npm i typescript@latest para actualizar typescript
+
+--COMPILAR LA APK--
+para compilar la apk descargar el gradle:
+https://gradle.org/next-steps/?version=6.1.1&format=all
+ir a C:\Gradle (creas la carpeta)
+abre el zip descargado y arrastra la carpeta gradle6.1.1
+Vete a mi pc, click derecho, propiedades -> Ajustes avanzados de sistema -> variables de entorno.
+En "variables de sistema" (ojo, sistema, las de abajo, no las de usuario)
+vas a path, click derecho, editar, y le das a nuevo, entonces escribes C:\Gradle\gradle-6.1.1\bin y guardas.
+Para ver que se ha instalado bien, escribe en una NUEVA ventana de cmd (las que estan funcionando no refrescan)
+gradle -v y te dirá la version que esta instalada y funcionando.
+si por lo que sea no te funciona, ve a variables del sistema otra vez, y esta vez sin ir a path, le das a nueva
+y el nombre pones "GRADLE_HOME" y metes de ruta C:\Gradle.
+
+ahora para compilar la apk, en la carpeta del proyecto (como siempre) escribes CMD y...
+ionic cordova build android
+Se generará la apk en \AstrengEstyaGuia\platforms\android\app\build\outputs\apk\debug\app-debug.apk
